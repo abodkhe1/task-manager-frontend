@@ -39,7 +39,7 @@ export default function RegisterPage() {
 
     try {
       await register(name, email, password);
-      navigate('/login', { state: { registered: true } });
+      navigate('/taskdashboard', { state: { registered: true } });
     } catch (err) {
       // Error is already handled in context
     }
